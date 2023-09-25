@@ -21,6 +21,7 @@ public final class GetAverageGradeUseCase {
         for (String member: members){
             Grade grade = gradeDB.getGrade(member, course);
             total_grade += grade.getGrade();
+
         }
 
         return total_grade / count;
